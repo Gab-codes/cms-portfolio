@@ -1,54 +1,97 @@
 "use client";
-import React from "react";
+import { motion } from "framer-motion";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export function Hero() {
   return (
     <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden">
       <BackgroundRippleEffect />
-      <div className="relative z-10 mx-auto max-w-6xl px-4 text-center">
-        {/* Creative Headline */}
-        <h1 className="text-4xl font-bold text-neutral-900 md:text-5xl lg:text-7xl dark:text-neutral-100">
-          I Code. I Create.
-          <span className="block mt-2 text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
-            I Craft the Web.
+
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-6"
+        >
+          <span className="inline-block rounded-full bg-primary/20 px-6 py-3 text-sm font-semibold text-primary shadow-lg ring-1 ring-primary/30 backdrop-blur-sm dark:bg-primary/10 dark:ring-primary/50 dark:shadow-primary/20">
+            ✨ Available for new opportunities
           </span>
-        </h1>
+        </motion.div>
 
-        {/* Specific Role */}
-        <p className="mt-8 text-lg font-medium text-neutral-700 md:text-xl dark:text-neutral-300">
-          Full-Stack Developer & Problem Solver
-        </p>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl"
+        >
+          Hi, I&apos;m{" "}
+          <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent dark:from-primary dark:via-primary/90 dark:to-primary/60">
+            Toru Gabriel
+          </span>
+        </motion.h1>
 
-        {/* Tech Stack Teaser */}
-        <p className="mx-auto mt-6 max-w-2xl text-base text-neutral-600 md:text-lg dark:text-neutral-400">
-          Specializing in the React/Next.js ecosystem and powerful backend
-          solutions.
-        </p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          className="mt-6 text-xl font-medium text-muted-foreground md:text-2xl"
+        >
+          Full-Stack Software Engineer
+        </motion.p>
 
-        {/* Strong, single CTA */}
-        <div className="mt-10">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg"
+        >
+          Based in Lagos, Nigeria. Specializing in the React/Next.js ecosystem
+          and powerful backend solutions.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+          className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+        >
           <a
             href="#projects"
-            className="group inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-8 py-3 text-sm font-medium text-white transition-all hover:shadow-lg"
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "group relative overflow-hidden rounded-full bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-primary/25 dark:shadow-primary/20 dark:hover:shadow-primary/40"
+            )}
           >
-            See My Projects
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
+            <span className="relative z-10">View My Work</span>
+            <ArrowDown className="relative z-10 ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary/80 to-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </a>
-        </div>
+
+          <div className="flex items-center gap-4">
+            <a
+              href="mailto:toru@example.com"
+              className="rounded-full p-3 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:shadow-lg hover:shadow-primary/20 dark:hover:bg-primary/20"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
+            <a
+              href="https://github.com/torugabriel"
+              className="rounded-full p-3 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:shadow-lg hover:shadow-primary/20 dark:hover:bg-primary/20"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+            <a
+              href="https://linkedin.com/in/torugabriel"
+              className="rounded-full p-3 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:shadow-lg hover:shadow-primary/20 dark:hover:bg-primary/20"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
