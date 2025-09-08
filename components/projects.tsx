@@ -5,42 +5,7 @@ import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { CardContainer, CardBody, CardItem } from "./ui/3d-card";
 import Image from "next/image";
-
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-    image: "/modern-ecommerce-dashboard.png",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Stripe",
-      "PostgreSQL",
-      "Tailwind CSS",
-    ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/torugabriel/ecommerce",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "Collaborative task management application with real-time updates, team collaboration, and project tracking.",
-    image: "/task-management-interface.png",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/torugabriel/taskmanager",
-  },
-  {
-    title: "Weather Analytics Dashboard",
-    description:
-      "Real-time weather data visualization with interactive charts, forecasting, and location-based insights.",
-    image: "/weather-dashboard-analytics.png",
-    technologies: ["React", "D3.js", "Express.js", "Weather API", "Chart.js"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/torugabriel/weather-dashboard",
-  },
-];
+import { projects } from "@/constant";
 
 export function Projects() {
   return (
