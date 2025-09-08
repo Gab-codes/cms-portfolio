@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import { GenericHoverEffect } from "./ui/card-hover-effect";
+import { CardContainer, CardBody, CardItem } from "./ui/3d-card";
 import Image from "next/image";
 
 const projects = [
@@ -61,69 +61,89 @@ export function Projects() {
           </p>
         </motion.div>
 
-        <GenericHoverEffect
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          uniqueId="projects"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div key={project.title} className="p-6">
-              <div className="aspect-video overflow-hidden rounded-lg mb-4">
-                <Image
-                  width={500}
-                  height={500}
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">
-                {project.title}
-              </h3>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="text-xs">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-              <div className="flex gap-2">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="flex-1 bg-transparent"
-                  asChild
+            <CardContainer key={project.title} className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
                 >
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </a>
-                </Button>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="flex-1 bg-transparent"
-                  asChild
+                  {project.title}
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                 >
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  {project.description}
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src={project.image || "/placeholder.svg"}
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt={project.title}
+                  />
+                </CardItem>
+                <CardItem translateZ="50" className="mt-4">
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="secondary" className="text-xs">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardItem>
+                <div className="flex justify-between items-center mt-6">
+                  <CardItem
+                    translateZ={20}
+                    as="button"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                   >
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </a>
-                </Button>
-              </div>
-            </div>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="bg-transparent"
+                      asChild
+                    >
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as="button"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="bg-transparent hover:text-black"
+                      asChild
+                    >
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
           ))}
-        </GenericHoverEffect>
+        </div>
       </div>
     </section>
   );

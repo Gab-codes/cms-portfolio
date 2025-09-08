@@ -44,14 +44,14 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="flex flex-col w-full md:items-center justify-center gap-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Card>
+            <Card className="w-full md:max-w-xl">
               <CardHeader>
                 <CardTitle>Send me a message</CardTitle>
               </CardHeader>
