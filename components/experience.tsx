@@ -67,7 +67,7 @@ const timelineData = experiences.map((exp) => ({
 
 export function Experience() {
   return (
-    <section id="experience" className="bg-muted/30">
+    <section id="experience" className="bg-muted/30 max-sm:mx-2">
       <Timeline data={timelineData} />
     </section>
   );
