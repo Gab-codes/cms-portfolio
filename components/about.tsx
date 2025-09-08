@@ -2,111 +2,8 @@
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import {
-  Code2,
-  Database,
-  Globe,
-  Smartphone,
-  Cloud,
-  Zap,
-  User,
-} from "lucide-react";
-
-const skills = [
-  "Next.js",
-  "React",
-  "React Native",
-  "TypeScript",
-  "Node.js",
-  "Docker",
-  "Express.js",
-  "Tanstack Query",
-  "Figma",
-  "Zod",
-  "Javascript",
-  "PostgreSQL",
-  "MongoDB",
-  "Redux",
-  "Prisma",
-  "React Hook Form",
-  "Shadcn UI",
-  "Git",
-  "Tailwind CSS",
-  "Framer Motion",
-  "CI/CD Pipeline",
-  "Vercel",
-  "RESTful API",
-  "Auth.js",
-  "Firebase",
-];
-
-const bentoItems = [
-  {
-    title: "Frontend Development",
-    description:
-      "Building responsive and interactive user interfaces with React, Next.js, and modern CSS frameworks.",
-    header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    ),
-    icon: <Code2 className="h-4 w-4 text-neutral-500" />,
-    className: "md:col-span-2",
-  },
-  {
-    title: "Backend Architecture",
-    description:
-      "Designing scalable server-side solutions with Node.js, Python, and cloud technologies.",
-    header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    ),
-    icon: <Database className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "About Me",
-    description:
-      "Full-stack software engineer based in Lagos, Nigeria, passionate about creating digital experiences that matter.",
-    header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    ),
-    icon: <User className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Web Applications",
-    description:
-      "Creating full-stack web applications with modern frameworks and best practices.",
-    header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    ),
-    icon: <Globe className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Mobile-First Design",
-    description:
-      "Ensuring seamless experiences across all devices with responsive design principles.",
-    header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    ),
-    icon: <Smartphone className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Cloud & DevOps",
-    description:
-      "Deploying and managing applications with AWS, Docker, and modern DevOps practices.",
-    header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    ),
-    icon: <Cloud className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Performance Optimization",
-    description:
-      "Optimizing applications for speed, scalability, and exceptional user experience.",
-    header: (
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-    ),
-    icon: <Zap className="h-4 w-4 text-neutral-500" />,
-    className: "md:col-span-2",
-  },
-];
+import { skills } from "@/constant";
+import { bentoItems } from "@/constant/skills";
 
 export function About() {
   return (
@@ -128,9 +25,9 @@ export function About() {
         </motion.div>
 
         <BentoGrid className="max-w-4xl mx-auto">
-          {bentoItems.map((item, i) => (
+          {bentoItems.map((item) => (
             <BentoGridItem
-              key={i}
+              key={item.title}
               title={item.title}
               description={item.description}
               header={item.header}
