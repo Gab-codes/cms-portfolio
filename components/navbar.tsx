@@ -31,7 +31,7 @@ const Navbar = () => {
       {/* Desktop */}
       <div
         className={cn(
-          "hidden lg:flex justify-between items-center w-full z-50 p-4 transition-colors duration-300",
+          "hidden lg:flex justify-between items-center w-full max-w-[110rem] z-50 p-4 transition-colors duration-300",
           isScrolled
             ? "fixed w-full top-0 backdrop-blur-md shadow-sm"
             : "relative"
@@ -47,7 +47,7 @@ const Navbar = () => {
       {/* Mobile */}
       <div
         className={cn(
-          "flex lg:hidden justify-between items-center fixed top-0  backdrop-blur-md md:-mx-2 py-2 px-6 md:px-8 w-full z-50 transition-colors duration-300",
+          "flex lg:hidden justify-between items-center fixed top-0  backdrop-blur-md py-2 px-6 md:px-8 w-full z-50 transition-colors duration-300",
           isScrolled
             ? "shadow-sm dark:shadow-white/15 mt-0"
             : "shadow-none pt-6"
