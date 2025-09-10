@@ -1,9 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
+import * as motion from "motion/react-client";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -49,8 +49,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground md:text-lg"
         >
-          Based in Lagos, Nigeria. Specializing in the React/Next.js ecosystem
-          and powerful backend solutions.
+          Full-Stack Developer specializing in modern web and mobile ecosystems,
+          delivering scalable front-end experiences and robust backend
+          solutions.
         </motion.p>
 
         <motion.div
@@ -59,7 +60,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
           className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
-          <a
+          <Link
             href="#projects"
             className={cn(
               buttonVariants({ size: "lg" }),
@@ -69,27 +70,29 @@ export function Hero() {
             <span className="relative z-10">View My Work</span>
             <ArrowDown className="relative z-10 ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary/80 to-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-          </a>
+          </Link>
 
           <div className="flex items-center gap-4">
             <a
-              href="mailto:toru@example.com"
+              href="mailto:dayotoru@gmail.com"
               className="rounded-full p-3 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:shadow-lg hover:shadow-primary/20 dark:hover:bg-primary/20"
             >
               <Mail className="h-5 w-5" />
             </a>
-            <a
-              href="https://github.com/torugabriel"
+            <Link
+              href="https://github.com/Gab-codes"
+              target="_blank"
               className="rounded-full p-3 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:shadow-lg hover:shadow-primary/20 dark:hover:bg-primary/20"
             >
               <Github className="h-5 w-5" />
-            </a>
-            <a
-              href="https://linkedin.com/in/torugabriel"
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/temidayo-gabriel-3217a6276"
+              target="_blank"
               className="rounded-full p-3 text-muted-foreground transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:shadow-lg hover:shadow-primary/20 dark:hover:bg-primary/20"
             >
               <Linkedin className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

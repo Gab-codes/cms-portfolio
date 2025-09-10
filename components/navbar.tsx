@@ -38,7 +38,9 @@ const Navbar = () => {
             : "relative"
         )}
       >
-        <span className="text-2xl font-semibold tracking-tighter">Gabriel</span>
+        <span className="text-2xl text-muted-foreground hover:text-foreground/90 cursor-context-menu font-semibold tracking-tighter">
+          Gabriel
+        </span>
         <div className="flex items-center gap-4">
           <Link
             href="/cv.pdf"

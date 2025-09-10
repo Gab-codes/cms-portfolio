@@ -45,7 +45,7 @@ export function FloatingNavigation() {
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
       <FloatingDock
         items={navItems}
-        desktopClassName="bg-white/80 dark:bg-black/80 backdrop-blur-md border border-neutral-200 dark:border-neutral-800"
+        desktopClassName="bg-card backdrop-blur-sm border border-foreground/10 dark:border-foreground/15"
       />
     </div>
   );
