@@ -11,7 +11,7 @@ export function Contact() {
   const contactItems = [
     {
       title: "Email",
-      description: "toru@example.com",
+      description: "dayotoru@gmail.com",
       icon: <Mail className="h-6 w-6" />,
     },
     {
@@ -21,7 +21,7 @@ export function Contact() {
     },
     {
       title: "Phone",
-      description: "+234 XXX XXX XXXX",
+      description: "+234 704 419 5454",
       icon: <Phone className="h-6 w-6" />,
     },
   ];
@@ -62,7 +62,9 @@ export function Contact() {
                 </div>
                 <Input placeholder="Subject" />
                 <Textarea placeholder="Your Message" rows={5} />
-                <Button className="w-full">Send Message</Button>
+                <Button className="w-full bg-gradient-to-br from-primary to-primary/80 text-white cursor-pointer">
+                  Send Message
+                </Button>
               </CardContent>
             </Card>
           </motion.div>

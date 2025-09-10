@@ -31,7 +31,7 @@ export const bentoItems = [
       <div className="flex gap-8 items-center justify-center flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-primary/10 to-primary/20">
         {frontendImages.map((item, i, arr) => (
           <div key={item.name} className="flex items-center gap-4">
-            <div className="rounded-full p-2 bg-white/70 dark:bg-white/85">
+            <div className="rounded-full p-2 bg-white/80 dark:bg-white/90">
               <Image
                 src={item.image}
                 alt={item.name}
@@ -63,7 +63,7 @@ export const bentoItems = [
       <div className="flex gap-8 items-center justify-center flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-primary/15  to-primary/5">
         {backendImages.map((item, i, arr) => (
           <div key={item.name} className="flex items-center gap-4">
-            <div className="rounded-full p-2 bg-white/70 dark:bg-white/85">
+            <div className="rounded-full p-2 bg-white/80 dark:bg-white/90">
               <Image
                 src={item.image}
                 alt={item.name}
@@ -91,7 +91,7 @@ export const bentoItems = [
     description:
       "Creating full-stack web applications with modern frameworks and best practices.",
     header: (
-      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-tr from-primary/30  to-primary/10">
         <Image
           src="/images/web.svg"
           alt="Web Application"

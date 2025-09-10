@@ -17,6 +17,7 @@ export const skills = [
   "React Hook Form",
   "Shadcn UI",
   "Git",
+  "GSAP",
   "Tailwind CSS",
   "Framer Motion",
   "Three.js",
@@ -29,22 +30,91 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Vortex ",
+    description:
+      "A full-stack car rental platform (work in progress) designed to provide seamless booking and management for both customers and merchants. Built with a strong focus on authentication, form validation, and modern UI/UX practices.",
+    image: "/images/vortex.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Zod",
+      "React Hook Form",
+      "Shadcn UI",
+      "Auth.js",
+    ],
+    liveUrl: "https://deecar-rentals.vercel.app/",
+    githubUrl: "#",
+    status: "In Progress",
+  },
+  {
+    title: "BitWireTrust Platform",
+    description:
+      "A full-featured FinTech platform with distinct user and admin dashboards, carefully designed using Figma and built with React, TypeScript, and TanStack libraries.",
+    image: "/images/bitwiretrust.png",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "TanStack (React Query)",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Zod",
+      "React Hook Form",
+    ],
+    liveUrl: "https://www.bitwiretrust.com/",
+    githubUrl: "#",
+  },
+  {
+    title: "Monifrap Web Platform",
+    description:
+      "A modern web platform featuring a pixel-perfect landing page and a secure admin section. Built with Next.js and TypeScript by carefully following a Figma design to deliver a high-quality and responsive user experience.",
+    image: "/images/monifrap.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Shadcn UI",
+      "Framer Motion",
+    ],
+    liveUrl: "https://monifrapweb.vercel.app/",
+    githubUrl: "#",
+  },
+  {
     title: "Interview Pro - AI-Powered Interviewer",
     description:
       "An AI-powered mock interview platform designed to simulate real interviews and provide instant structured feedback.",
     image: "/images/interview-pro.png",
     technologies: ["Next.js", "TypeScript", "TailwindCSS", "Firebase", "AI"],
     liveUrl: "https://interview-pro-rho.vercel.app/",
-    githubUrl: "https://github.com/torugabriel/interview-pro",
+    githubUrl: "https://github.com/Gab-codes/InterviewPro",
   },
   {
     title: "3D Portfolio",
     description:
       "A sleek and interactive personal 3D portfolio built with smooth animations, responsive design, and a modern layout.",
     image: "/images/3d-portfolio.png",
-    technologies: ["React.js", "Javascript", "TailwindCSS", "Three.js"],
+    technologies: ["React.js", "Javascript", "GSAP", "TailwindCSS", "Three.js"],
     liveUrl: "https://interview-pro-rho.vercel.app/",
-    githubUrl: "https://github.com/torugabriel/interview-pro",
+    githubUrl: "https://github.com/Gab-codes/my3d-portfolio",
+  },
+  {
+    title: "Tianna-Store – Full-Stack E-commerce",
+    description:
+      "A scalable full-stack e-commerce platform with product management, inventory tracking, and secure authentication.",
+    image: "/images/tianna.png",
+    technologies: [
+      "React.js",
+      "TailwindCSS",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux",
+      "JWT",
+    ],
+    liveUrl: "https://ecommerce-google-login-1.onrender.com/",
+    githubUrl: "https://github.com/torugabriel/tianna-store",
   },
   {
     title: "Andrew Portfolio",
@@ -58,43 +128,26 @@ export const projects = [
   {
     title: "Miala Admin Dashboard",
     description:
-      "An internal admin dashboard with role-based access, data tables, and form components for managing agents, products, and users.",
-    image: "/textures/project/miala.mp4",
+      "An internal admin dashboard with role-based access, data tables, and form components for managing agents, products, and users. Source code not available as this is a private project.",
+    image: "/images/miala.png",
     technologies: ["React.js", "JavaScript", "TailwindCSS"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/torugabriel/miala-dashboard",
-  },
-  {
-    title: "Tianna-Store – Full-Stack E-commerce",
-    description:
-      "A scalable e-commerce platform with product management, inventory tracking, and secure authentication.",
-    image: "/textures/project/project2.mp4",
-    technologies: [
-      "React.js",
-      "TailwindCSS",
-      "JavaScript",
-      "Node.js",
-      "MongoDB",
-      "Redux",
-      "JWT",
-    ],
-    liveUrl: "https://ecommerce-google-login-1.onrender.com/",
-    githubUrl: "https://github.com/torugabriel/tianna-store",
+    liveUrl: "http://mialaweb.vercel.app",
+    githubUrl: "#",
   },
   {
     title: "ShopEase",
     description:
       "A responsive e-commerce platform with ContextAPI state management and seamless shopping experience for both guests and authenticated users.",
-    image: "/textures/project/project1.mp4",
+    image: "/images/shopease.png",
     technologies: ["React.js", "CSS", "JavaScript", "Figma"],
     liveUrl: "https://ecommerce-frontend-iota-seven.vercel.app/",
-    githubUrl: "https://github.com/torugabriel/shopease",
+    githubUrl: "https://github.com/Gab-codes/ecommerce-frontend",
   },
   {
     title: "Temidayo's Portfolio",
     description:
       "A personal portfolio with smooth animations and transitions, showcasing expertise with React and Framer Motion.",
-    image: "/textures/project/project3.mp4",
+    image: "/images/1st-portfolio.png",
     technologies: ["React.js", "CSS", "JavaScript", "Framer Motion"],
     liveUrl: "https://temidy-portfolio.vercel.app",
     githubUrl: "https://github.com/torugabriel/temidayo-portfolio",
@@ -103,7 +156,7 @@ export const projects = [
     title: "LearnCooking",
     description:
       "An online recipe platform that shows users 10 random recipes per refresh, built to make cooking fun and educational.",
-    image: "/textures/project/project4.mp4",
+    image: "/images/food-recipe.png",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://gab-codes.github.io/Recipe-book-app",
     githubUrl: "https://github.com/torugabriel/recipe-book-app",
