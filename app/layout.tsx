@@ -22,11 +22,13 @@ export const metadata: Metadata = {
     "Toru Gabriel",
     "Full-Stack Developer",
     "Frontend Developer",
+    "Mobile Developer",
     "React",
     "Next.js",
     "TypeScript",
     "Node.js",
     "Portfolio",
+    "Ecommerce Developer",
     "Fintech Developer",
     "Web Developer",
   ],
@@ -36,11 +38,11 @@ export const metadata: Metadata = {
     title: "Toru Gabriel | Full-Stack Developer Portfolio",
     description:
       "Explore the portfolio of Toru Gabriel, showcasing fintech apps, car rental platforms, and scalable web projects built with React, Next.js, and TypeScript.",
-    url: "https://your-portfolio-link.com",
+    url: "https://torugabriel.vercel.app",
     siteName: "Toru Gabriel Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Toru Gabriel Portfolio",
@@ -54,8 +56,8 @@ export const metadata: Metadata = {
     title: "Toru Gabriel | Full-Stack Developer Portfolio",
     description:
       "Full-stack developer specializing in React, Next.js, and TypeScript. View projects, fintech apps, and web platforms.",
-    images: ["/og-image.png"],
-    creator: "@your_twitter_handle",
+    images: ["/og-image.webp"],
+    creator: "@temi_dy",
   },
 };
 
