@@ -12,6 +12,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ModeToggle } from "./toggle-theme";
+import { buttonVariants } from "./ui/button";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -31,15 +32,24 @@ const Navbar = () => {
       {/* Desktop */}
       <div
         className={cn(
-          "hidden lg:flex justify-between items-center w-full max-w-[110rem] z-50 p-4 transition-colors duration-300",
+          "hidden md:flex justify-between items-center w-full max-w-[110rem] z-50 p-4 transition-colors duration-300",
           isScrolled
             ? "fixed w-full top-0 backdrop-blur-md shadow-sm"
             : "relative"
         )}
       >
-        <span className="text-xl">Gabriel</span>
+        <span className="text-2xl font-semibold tracking-tighter">Gabriel</span>
         <div className="flex items-center gap-4">
-          <span>Download my Resume</span>
+          <Link
+            href="/cv.pdf"
+            target="_blank"
+            className={cn(
+              buttonVariants({ size: "default" }),
+              "cursor-pointer bg-gradient-to-r from-primary/90 via-primary/70 to-primary/80 text-white"
+            )}
+          >
+            Download my Resume
+          </Link>
           <ModeToggle />
         </div>
       </div>
@@ -47,7 +57,7 @@ const Navbar = () => {
       {/* Mobile */}
       <div
         className={cn(
-          "flex lg:hidden justify-between items-center fixed top-0  backdrop-blur-md py-2 px-6 md:px-8 w-full z-50 transition-colors duration-300",
+          "flex md:hidden justify-between items-center fixed top-0  backdrop-blur-md py-2 px-6 md:px-8 w-full z-50 transition-colors duration-300",
           isScrolled
             ? "shadow-sm dark:shadow-white/15 mt-0"
             : "shadow-none pt-6"
@@ -61,11 +71,11 @@ const Navbar = () => {
             <SheetTrigger>
               <Menu className="size-8" />
             </SheetTrigger>
-            <SheetContent className="dark:bg-card dark:border-white/20 dark:border-1 w-1/2 h-55 sm:h-[35dvh] rounded-lg mt-4 mr-4">
+            <SheetContent className="dark:bg-card dark:border-white/20 dark:border-1 w-1/2 h-70 sm:h-[35dvh] rounded-lg mt-4 mr-4">
               <SheetHeader>
                 <SheetTitle className="sr-only">Nav sidebar</SheetTitle>
               </SheetHeader>
-              <div className="flex w-1/2 flex-col px-4 gap-4 text-base font-medium">
+              <div className="flex w-full flex-col px-4 gap-4 text-base font-medium">
                 <Link href="#home" onClick={() => setOpen(false)}>
                   Home
                 </Link>
@@ -77,6 +87,17 @@ const Navbar = () => {
                 </Link>
                 <Link href="#contact" onClick={() => setOpen(false)}>
                   Contact
+                </Link>
+
+                <Link
+                  href="/cv.pdf"
+                  target="_blank"
+                  className={cn(
+                    buttonVariants({ size: "default" }),
+                    "cursor-pointer w-full mt-4 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/80 text-white"
+                  )}
+                >
+                  Download my Resume
                 </Link>
               </div>
             </SheetContent>
