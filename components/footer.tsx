@@ -22,8 +22,9 @@ export function Footer() {
               Toru Gabriel
             </h3>
             <p className="text-muted-foreground max-w-sm">
-              Full-stack developer crafting exceptional digital experiences with
-              React/Next.js and modern backend solutions.
+              Full-Stack Developer specializing in modern web and mobile
+              ecosystems, delivering scalable front-end experiences and robust
+              backend solutions.
             </p>
           </div>
 
@@ -63,7 +64,7 @@ export function Footer() {
             <h4 className="text-lg font-medium text-foreground">Connect</h4>
             <div className="flex space-x-4">
               <motion.a
-                href="https://github.com"
+                href="https://github.com/Gab-codes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-all duration-200"
@@ -73,7 +74,7 @@ export function Footer() {
                 <Github className="w-5 h-5" />
               </motion.a>
               <motion.a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/temidayo-gabriel-3217a6276"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-all duration-200"
@@ -83,7 +84,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </motion.a>
               <motion.a
-                href="https://twitter.com"
+                href="https://x.com/temi_dy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-all duration-200"
@@ -93,7 +94,7 @@ export function Footer() {
                 <Twitter className="w-5 h-5" />
               </motion.a>
               <motion.a
-                href="mailto:toru@example.com"
+                href="mailto:dayotoru@gmail.com"
                 className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-all duration-200"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -113,10 +114,10 @@ export function Footer() {
           className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
         >
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Toru Gabriel. All rights reserved.
+            &copy; {currentYear} Toru Gabriel. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
-            Built with Next.js & Tailwind CSS
+            Built with Next.js & ❤️
           </p>
         </motion.div>
       </div>

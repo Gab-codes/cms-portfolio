@@ -14,7 +14,7 @@ import Image from "next/image";
 const frontendImages = [
   { name: "React", image: "/images/react.svg" },
   { name: "Next.js", image: "/images/nextjs.svg" },
-  { name: "expo", image: "/images/expo.svg" },
+  { name: "Expo", image: "/images/expo.svg" },
 ];
 
 const backendImages = [
@@ -107,7 +107,7 @@ export const bentoItems = [
     title: "Mobile Application",
     description: "Creating beautiful mobile applications with React Native",
     header: (
-      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-tl from-primary/9  to-primary/28">
         <Image
           src="/images/phone-reels.svg"
           alt="React Native"
@@ -124,7 +124,7 @@ export const bentoItems = [
     description:
       "Ensuring seamless experiences across all devices with responsive design principles.",
     header: (
-      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-bl from-primary/30  to-primary/10">
         <Image
           src="/images/responsive.svg"
           alt="responsive website"
@@ -141,7 +141,7 @@ export const bentoItems = [
     description:
       "Optimizing applications for speed, scalability, and exceptional user experience.",
     header: (
-      <div className="flex flex-1 max-md:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+      <div className="flex flex-1 max-md:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-t from-primary/20  to-transparent">
         <Image
           src="/images/optimize.svg"
           alt="optimized mobile phone"
@@ -159,7 +159,7 @@ export const bentoItems = [
       "Full-stack software engineer based in Lagos, Nigeria, passionate about creating digital experiences that matter.I am always striving to learn more, constantly improving my skills to build efficient and impactful applications. I'm based in Nigeria, but can remotely across all timezones.",
 
     header: (
-      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+      <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-t from-primary-foreground to-transparent">
         <Image
           src="/images/avatar.svg"
           alt="about me"

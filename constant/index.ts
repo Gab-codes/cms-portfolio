@@ -33,12 +33,14 @@ export const projects = [
     title: "Vortex ",
     description:
       "A full-stack car rental platform (work in progress) designed to provide seamless booking and management for both customers and merchants. Built with a strong focus on authentication, form validation, and modern UI/UX practices.",
-    image: "/images/vortex.png",
+    image: "/images/vortex.webp",
     technologies: [
       "Next.js",
       "TypeScript",
       "Prisma",
       "PostgreSQL",
+      "Tanstack Query",
+      "Tailwind CSS",
       "Zod",
       "React Hook Form",
       "Shadcn UI",
@@ -49,10 +51,10 @@ export const projects = [
     status: "In Progress",
   },
   {
-    title: "BitWireTrust Platform",
+    title: "BitWireTrust Frontend",
     description:
       "A full-featured FinTech platform with distinct user and admin dashboards, carefully designed using Figma and built with React, TypeScript, and TanStack libraries.",
-    image: "/images/bitwiretrust.png",
+    image: "/images/bitwiretrust.webp",
     technologies: [
       "React.js",
       "TypeScript",
@@ -66,10 +68,10 @@ export const projects = [
     githubUrl: "#",
   },
   {
-    title: "Monifrap Web Platform",
+    title: "Monifrap Web",
     description:
       "A modern web platform featuring a pixel-perfect landing page and a secure admin section. Built with Next.js and TypeScript by carefully following a Figma design to deliver a high-quality and responsive user experience.",
-    image: "/images/monifrap.png",
+    image: "/images/monifrap.webp",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -84,7 +86,7 @@ export const projects = [
     title: "Interview Pro - AI-Powered Interviewer",
     description:
       "An AI-powered mock interview platform designed to simulate real interviews and provide instant structured feedback.",
-    image: "/images/interview-pro.png",
+    image: "/images/interview-pro.webp",
     technologies: ["Next.js", "TypeScript", "TailwindCSS", "Firebase", "AI"],
     liveUrl: "https://interview-pro-rho.vercel.app/",
     githubUrl: "https://github.com/Gab-codes/InterviewPro",
@@ -93,16 +95,16 @@ export const projects = [
     title: "3D Portfolio",
     description:
       "A sleek and interactive personal 3D portfolio built with smooth animations, responsive design, and a modern layout.",
-    image: "/images/3d-portfolio.png",
+    image: "/images/3d-portfolio.webp",
     technologies: ["React.js", "Javascript", "GSAP", "TailwindCSS", "Three.js"],
-    liveUrl: "https://interview-pro-rho.vercel.app/",
+    liveUrl: "https://temidayo-gabriel-portfolio-2.vercel.app/",
     githubUrl: "https://github.com/Gab-codes/my3d-portfolio",
   },
   {
     title: "Tianna-Store – Full-Stack E-commerce",
     description:
       "A scalable full-stack e-commerce platform with product management, inventory tracking, and secure authentication.",
-    image: "/images/tianna.png",
+    image: "/images/tianna.webp",
     technologies: [
       "React.js",
       "TailwindCSS",
@@ -120,7 +122,7 @@ export const projects = [
     title: "Andrew Portfolio",
     description:
       "A sleek and interactive personal portfolio built with smooth animations, responsive design, and a modern layout.",
-    image: "/images/andrew.png",
+    image: "/images/andrew.webp",
     technologies: ["React.js", "TailwindCSS", "JavaScript", "Framer Motion"],
     liveUrl: "https://andrew-website-demo.vercel.app/",
     githubUrl: "https://github.com/torugabriel/andrew-portfolio",
@@ -129,7 +131,7 @@ export const projects = [
     title: "Miala Admin Dashboard",
     description:
       "An internal admin dashboard with role-based access, data tables, and form components for managing agents, products, and users. Source code not available as this is a private project.",
-    image: "/images/miala.png",
+    image: "/images/miala.webp",
     technologies: ["React.js", "JavaScript", "TailwindCSS"],
     liveUrl: "http://mialaweb.vercel.app",
     githubUrl: "#",
@@ -138,7 +140,7 @@ export const projects = [
     title: "ShopEase",
     description:
       "A responsive e-commerce platform with ContextAPI state management and seamless shopping experience for both guests and authenticated users.",
-    image: "/images/shopease.png",
+    image: "/images/shopease.webp",
     technologies: ["React.js", "CSS", "JavaScript", "Figma"],
     liveUrl: "https://ecommerce-frontend-iota-seven.vercel.app/",
     githubUrl: "https://github.com/Gab-codes/ecommerce-frontend",
@@ -147,7 +149,7 @@ export const projects = [
     title: "Temidayo's Portfolio",
     description:
       "A personal portfolio with smooth animations and transitions, showcasing expertise with React and Framer Motion.",
-    image: "/images/1st-portfolio.png",
+    image: "/images/1st-portfolio.webp",
     technologies: ["React.js", "CSS", "JavaScript", "Framer Motion"],
     liveUrl: "https://temidy-portfolio.vercel.app",
     githubUrl: "https://github.com/torugabriel/temidayo-portfolio",
@@ -156,7 +158,7 @@ export const projects = [
     title: "LearnCooking",
     description:
       "An online recipe platform that shows users 10 random recipes per refresh, built to make cooking fun and educational.",
-    image: "/images/food-recipe.png",
+    image: "/images/food-recipe.webp",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://gab-codes.github.io/Recipe-book-app",
     githubUrl: "https://github.com/torugabriel/recipe-book-app",
@@ -171,13 +173,21 @@ export const experiences = [
     period: "March 2025 - Present",
     description:
       "Contributed to multiple projects including a fintech application, custom admin dashboards, and optimized landing pages. Focused on performance optimization, reusable components, API integration, and role-based access control to deliver scalable and user-friendly experiences.",
-    technologies: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Node.js"],
+    technologies: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Tanstack Query",
+      "Zod",
+    ],
   },
   {
     title: "Full-Stack Developer",
     company: "Vortex (Personal Project)",
     location: "Remote",
-    period: "2025 - Present",
+    period: "August 2025 - Present",
     description:
       "Built and deployed a production-ready car rental platform with features like user authentication, booking system, and admin dashboard. Focused on SEO optimization, responsive design, and scalable backend integration.",
     technologies: [
