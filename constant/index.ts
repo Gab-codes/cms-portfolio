@@ -136,33 +136,6 @@ export const projects = [
     liveUrl: "http://mialaweb.vercel.app",
     githubUrl: "#",
   },
-  {
-    title: "ShopEase",
-    description:
-      "A responsive e-commerce platform with ContextAPI state management and seamless shopping experience for both guests and authenticated users.",
-    image: "/images/shopease.webp",
-    technologies: ["React.js", "CSS", "JavaScript", "Figma"],
-    liveUrl: "https://ecommerce-frontend-iota-seven.vercel.app/",
-    githubUrl: "https://github.com/Gab-codes/ecommerce-frontend",
-  },
-  {
-    title: "Temidayo's Portfolio",
-    description:
-      "A personal portfolio with smooth animations and transitions, showcasing expertise with React and Framer Motion.",
-    image: "/images/1st-portfolio.webp",
-    technologies: ["React.js", "CSS", "JavaScript", "Framer Motion"],
-    liveUrl: "https://temidy-portfolio.vercel.app",
-    githubUrl: "https://github.com/torugabriel/temidayo-portfolio",
-  },
-  {
-    title: "LearnCooking",
-    description:
-      "An online recipe platform that shows users 10 random recipes per refresh, built to make cooking fun and educational.",
-    image: "/images/food-recipe.webp",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://gab-codes.github.io/Recipe-book-app",
-    githubUrl: "https://github.com/torugabriel/recipe-book-app",
-  },
 ];
 
 export const experiences = [
