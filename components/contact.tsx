@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { HoverEffect } from "./ui/card-hover-effect";
 
 export function Contact() {
@@ -62,8 +62,9 @@ export function Contact() {
                 </div>
                 <Input placeholder="Subject" />
                 <Textarea placeholder="Your Message" rows={5} />
-                <Button className="w-full bg-gradient-to-br from-primary to-primary/80 text-white cursor-pointer">
-                  Send Message
+                <Button className="w-full flex items-center justify-center bg-gradient-to-br from-primary to-primary/80 text-white cursor-pointer">
+                  <Send className="mr-2 size-4" />
+                  <span>Send Message</span>
                 </Button>
               </CardContent>
             </Card>
