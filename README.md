@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+A fullstack web developer portfolio
+
 ```bash
 npm run dev
 # or
