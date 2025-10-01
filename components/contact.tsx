@@ -16,7 +16,7 @@ export function Contact() {
     },
     {
       title: "Location",
-      description: "Lagos, Nigeria",
+      description: "World wide",
       icon: <MapPin className="h-6 w-6" />,
     },
     {
