@@ -79,7 +79,7 @@ const Navbar = () => {
                 <SheetTitle className="sr-only">Nav sidebar</SheetTitle>
               </SheetHeader>
               <div className="flex w-full flex-col px-4 gap-4 text-base font-medium">
-                <Link href={`${Url}/#home`} onClick={() => setOpen(false)}>
+                <Link href={`${Url}/#`} onClick={() => setOpen(false)}>
                   Home
                 </Link>
                 <Link href={`${Url}/#about`} onClick={() => setOpen(false)}>
