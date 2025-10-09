@@ -68,7 +68,7 @@ export function Hero() {
             )}
           >
             <span className="relative z-10">View My Work</span>
-            <ArrowDown className="relative z-10 ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+            <ArrowDown className="relative z-10 ml-2 animate-bounce size-4 transition-transform translate-y-1 group-hover:animate-none group-hover:translate-y-0" />
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary/80 to-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </Link>
 

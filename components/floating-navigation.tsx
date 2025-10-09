@@ -1,4 +1,5 @@
 "use client";
+import Url from "@/lib/url";
 import { FloatingDock } from "./ui/floating-dock";
 import { Home, User, Briefcase, FolderOpen, Mail } from "lucide-react";
 
@@ -8,35 +9,35 @@ const navItems = [
     icon: (
       <Home className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: `${Url}/#`,
   },
   {
     title: "About",
     icon: (
       <User className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#about",
+    href: `${Url}/#about`,
   },
   {
     title: "Experience",
     icon: (
       <Briefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#experience",
+    href: `${Url}/#experience`,
   },
   {
     title: "Projects",
     icon: (
       <FolderOpen className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#projects",
+    href: `${Url}/#projects`,
   },
   {
     title: "Contact",
     icon: (
       <Mail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#contact",
+    href: `${Url}/#contact`,
   },
 ];
 
