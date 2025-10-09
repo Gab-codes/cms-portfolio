@@ -68,6 +68,15 @@ export const projects = [
     githubUrl: "#",
   },
   {
+    title: "Interview Pro - AI-Powered Interviewer",
+    description:
+      "An AI-powered mock interview platform designed to simulate real interviews and provide instant structured feedback.",
+    image: "/images/interview-pro.webp",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Firebase", "AI"],
+    liveUrl: "https://interview-pro-rho.vercel.app/",
+    githubUrl: "https://github.com/Gab-codes/InterviewPro",
+  },
+  {
     title: "Monifrap Web",
     description:
       "A modern web platform featuring a pixel-perfect landing page and a secure admin section. Built with Next.js and TypeScript by carefully following a Figma design to deliver a high-quality and responsive user experience.",
@@ -83,13 +92,13 @@ export const projects = [
     githubUrl: "#",
   },
   {
-    title: "Interview Pro - AI-Powered Interviewer",
+    title: "TechCare Patient Dashboard",
     description:
-      "An AI-powered mock interview platform designed to simulate real interviews and provide instant structured feedback.",
-    image: "/images/interview-pro.webp",
-    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Firebase", "AI"],
-    liveUrl: "https://interview-pro-rho.vercel.app/",
-    githubUrl: "https://github.com/Gab-codes/InterviewPro",
+      "A responsive patient management dashboard built with React, Tailwind CSS, and Vite. Designed to showcase a clean UI, accessibility, and smooth user interactions, optimized for both desktop and mobile experiences.",
+    image: "/images/techcare.webp",
+    technologies: ["React", "Vite", "TailwindCSS", "Lucide React"],
+    liveUrl: "https://interview-project-tech-care-w3vv.vercel.app/",
+    githubUrl: "#",
   },
   {
     title: "3D Portfolio",
@@ -187,13 +196,13 @@ export const experiences = [
       "PHP",
     ],
   },
-  {
-    title: "Web Developer (Self-taught)",
-    company: "Personal Projects & Learning",
-    location: "Remote",
-    period: "2022 - Present",
-    description:
-      "Gained foundational knowledge of web technologies through self-learning, tutorials, and hands-on practice. Developed multiple side projects to strengthen problem-solving skills, apply new concepts, and build a diverse portfolio.",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-  },
+  // {
+  //   title: "Web Developer (Self-taught)",
+  //   company: "Personal Projects & Learning",
+  //   location: "Remote",
+  //   period: "2022 - Present",
+  //   description:
+  //     "Gained foundational knowledge of web technologies through self-learning, tutorials, and hands-on practice. Developed multiple side projects to strengthen problem-solving skills, apply new concepts, and build a diverse portfolio.",
+  //   technologies: ["HTML", "CSS", "JavaScript", "React"],
+  // },
 ];

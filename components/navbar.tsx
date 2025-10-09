@@ -13,6 +13,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ModeToggle } from "./toggle-theme";
 import { buttonVariants } from "./ui/button";
+import Url from "@/lib/url";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -28,14 +29,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div id="home">
+    <div id="home" className="sticky top-0 z-50">
       {/* Desktop */}
       <div
         className={cn(
-          "hidden md:flex justify-between items-center w-full max-w-[110rem] z-50 p-4 transition-colors duration-300",
+          "hidden md:flex justify-between items-center w-full max-w-[110rem] p-4 transition-all duration-300",
           isScrolled
-            ? "fixed w-full top-0 backdrop-blur-md shadow-sm"
-            : "relative"
+            ? "backdrop-blur-md shadow-sm bg-background/80"
+            : "bg-transparent"
         )}
       >
         <span className="text-2xl text-muted-foreground hover:text-foreground/90 cursor-context-menu font-semibold tracking-tighter">
@@ -59,10 +60,10 @@ const Navbar = () => {
       {/* Mobile */}
       <div
         className={cn(
-          "flex md:hidden justify-between items-center fixed top-0  backdrop-blur-md py-2 px-6 md:px-8 w-full z-50 transition-colors duration-300",
+          "flex md:hidden justify-between items-center py-2 px-6 md:px-8 w-full transition-all duration-300",
           isScrolled
-            ? "shadow-sm dark:shadow-white/15 mt-0"
-            : "shadow-none pt-6"
+            ? "backdrop-blur-md shadow-sm dark:shadow-white/15 bg-background/80"
+            : "bg-transparent"
         )}
       >
         <span className="text-xl">Gabriel</span>
@@ -73,21 +74,21 @@ const Navbar = () => {
             <SheetTrigger>
               <Menu className="size-8" />
             </SheetTrigger>
-            <SheetContent className="dark:bg-card dark:border-white/20 dark:border-1 w-1/2 h-70 sm:h-[35dvh] rounded-lg mt-4 mr-4">
+            <SheetContent className="dark:bg-card dark:border-white/20 dark:border-1 w-1/2 h-70 rounded-lg mt-4 mr-4">
               <SheetHeader>
                 <SheetTitle className="sr-only">Nav sidebar</SheetTitle>
               </SheetHeader>
               <div className="flex w-full flex-col px-4 gap-4 text-base font-medium">
-                <Link href="#home" onClick={() => setOpen(false)}>
+                <Link href={`${Url}/#home`} onClick={() => setOpen(false)}>
                   Home
                 </Link>
-                <Link href="#about" onClick={() => setOpen(false)}>
+                <Link href={`${Url}/#about`} onClick={() => setOpen(false)}>
                   About
                 </Link>
-                <Link href="#projects" onClick={() => setOpen(false)}>
+                <Link href={`${Url}/#projects`} onClick={() => setOpen(false)}>
                   Projects
                 </Link>
-                <Link href="#contact" onClick={() => setOpen(false)}>
+                <Link href={`${Url}/#contact`} onClick={() => setOpen(false)}>
                   Contact
                 </Link>
 
