@@ -88,7 +88,7 @@ export const projects = [
       "Shadcn UI",
       "Framer Motion",
     ],
-    liveUrl: "https://monifrapweb.vercel.app/",
+    liveUrl: "https://www.monifrap.com.ng/",
     githubUrl: "#",
   },
   {
