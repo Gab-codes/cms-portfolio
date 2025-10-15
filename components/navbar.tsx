@@ -44,6 +44,15 @@ const Navbar = () => {
         </span>
         <div className="flex items-center gap-4">
           <Link
+            href="/blog"
+            className={cn(
+              buttonVariants({ variant: "ghost" }),
+              "cursor-pointer"
+            )}
+          >
+            Blog
+          </Link>
+          <Link
             href="/cv.pdf"
             target="_blank"
             className={cn(
@@ -87,6 +96,9 @@ const Navbar = () => {
                 </Link>
                 <Link href={`${Url}/#projects`} onClick={() => setOpen(false)}>
                   Projects
+                </Link>
+                <Link href="/blog" onClick={() => setOpen(false)}>
+                  Blog
                 </Link>
                 <Link href={`${Url}/#contact`} onClick={() => setOpen(false)}>
                   Contact

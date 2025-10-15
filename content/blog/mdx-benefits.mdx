@@ -1,0 +1,111 @@
+---
+title: "Mastering MDX: A Game-Changer for Modern Web Development"
+date: "2025-10-14"
+description: "Discover how MDX combines the simplicity of Markdown with the power of React components to revolutionize content creation."
+image: "/images/3d-portfolio.webp"
+author: "Toru Gabriel"
+tags: ["MDX", "React", "Next.js"]
+readingTime: "8 min read"
+slug: "mastering-mdx"
+---
+
+import { Callout, Steps, Code, Prose } from "@/components/mdx/mdx-components";
+
+<Prose>
+
+# Mastering MDX: A Game-Changer for Modern Web Development
+
+<Callout type="info" icon="💡">
+  MDX is a powerful format that lets you seamlessly write JSX in your markdown
+  documents. Think of it as markdown with superpowers!
+</Callout>
+
+## Why Choose MDX?
+
+MDX combines the best of both worlds: the simplicity of Markdown and the power of React components. Here's why you should consider using it:
+
+1. Interactive Components: Embed live React components right in your markdown
+2. Rich Content: Create dynamic, interactive blog posts and documentation
+3. Developer-Friendly: Write content using familiar markdown syntax
+4. Maintainable: Reuse components across your documentation
+
+## Getting Started with MDX
+
+<Steps>
+### Install Dependencies
+
+First, you'll need to install the necessary packages:
+
+```bash
+npm install @next/mdx @mdx-js/loader @mdx-js/react
+```
+
+### Configure Next.js
+
+Create or update your <Code>next.config.js</Code>:
+
+```javascript
+const withMDX = require("@next/mdx")();
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+};
+
+module.exports = withMDX(nextConfig);
+```
+
+### Create Your First MDX Component
+
+Create a new component that you can use in your MDX files:
+
+```tsx
+export function CustomAlert({ children }) {
+  return <div className="p-4 bg-blue-100 rounded-lg">{children}</div>;
+}
+```
+
+</Steps>
+
+## Advanced MDX Features
+
+<Callout type="warning" icon="⚠️">
+  Remember that MDX is a development tool. Always sanitize user-provided MDX
+  content before rendering it in your application.
+</Callout>
+
+### Using Frontmatter
+
+MDX works seamlessly with frontmatter, allowing you to add metadata to your content:
+
+```markdown
+---
+title: My First MDX Post
+date: 2025-10-14
+---
+```
+
+### Dynamic Imports
+
+You can dynamically import components in your MDX files:
+
+```tsx
+import dynamic from "next/dynamic";
+
+const Chart = dynamic(() => import("@/components/Chart"));
+```
+
+## Best Practices
+
+1. Component Organization: Keep your MDX components in a dedicated directory
+2. Type Safety: Use TypeScript for your MDX components
+3. Styling: Leverage CSS Modules or Tailwind for consistent styling
+4. Performance: Use dynamic imports for heavy components
+5. Testing: Test your MDX components like regular React components
+
+<Callout type="info" icon="✨">
+  Want to take your MDX skills to the next level? Check out the [MDX
+  documentation](https://mdxjs.com/) for advanced features and examples.
+</Callout>
+
+</Prose>

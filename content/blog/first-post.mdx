@@ -1,0 +1,62 @@
+---
+title: "Building a Modern Web Application with Next.js and TypeScript"
+description: "A comprehensive guide to creating robust web applications using Next.js 13+ and TypeScript, including best practices and advanced patterns."
+date: "2025-10-14"
+author: "Toru Gabriel"
+tags: ["Next.js", "TypeScript", "Web Development"]
+image: "/images/techcare.webp"
+readingTime: "8 min read"
+slug: "building-modern-web-application-nextjs-typescript"
+---
+
+import Image from "next/image";
+
+<Image
+  src="/images/3d-portfolio.webp"
+  alt="App Preview"
+  width={120}
+  height={80}
+/>
+
+## Introduction
+
+In this article, we explore how to build a modern web application using Next.js and TypeScript. We'll cover project setup, routing, API integration, and advanced patterns for scalability.
+
+### Key topics
+
+- Project structure and folder organization for scalability
+- Type safety with TypeScript: interfaces, types, and props
+- API routes: building RESTful endpoints in Next.js
+- SSR (Server-Side Rendering) and SSG (Static Site Generation) for performance
+- Deployment tips for Vercel and best practices
+
+#### Example: Creating a Typed API Route
+
+```ts
+// pages/api/hello.ts
+import type { NextApiRequest, NextApiResponse } from "next";
+
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<{ message: string }>
+) {
+  res.status(200).json({ message: "Hello from Next.js API!" });
+}
+```
+
+#### Example: Using getServerSideProps
+
+```ts
+export async function getServerSideProps() {
+  // Fetch data from an API
+  return { props: { data: "Server-side data" } };
+}
+```
+
+#### Deployment Tips
+
+- Use environment variables for secrets
+- Enable image optimization
+- Monitor performance with Vercel Analytics
+
+Let's get started!
