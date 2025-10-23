@@ -156,7 +156,7 @@ export const bentoItems = [
   {
     title: "About Me",
     description:
-      "Full-stack software engineer passionate about creating digital experiences that matter. I am always striving to learn more, constantly improving my skills to build efficient and impactful applications. Open to working remotely across different time zones.",
+      "Hi there 👋, I'm Gabriel, a Full-stack software engineer passionate about creating digital experiences that matter. I am always striving to learn more, constantly improving my skills to build efficient and impactful applications. Open to working remotely across different time zones.",
 
     header: (
       <div className="flex flex-1 max-sm:py-5 justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-t from-primary-foreground to-transparent">
