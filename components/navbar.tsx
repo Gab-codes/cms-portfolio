@@ -13,8 +13,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ModeToggle } from "./toggle-theme";
 import { buttonVariants } from "./ui/button";
-import Url from "@/lib/url";
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -79,16 +77,16 @@ const Navbar = () => {
                 <SheetTitle className="sr-only">Nav sidebar</SheetTitle>
               </SheetHeader>
               <div className="flex w-full flex-col px-4 gap-4 text-base font-medium">
-                <Link href={`${Url}/#`} onClick={() => setOpen(false)}>
+                <Link href="/#" onClick={() => setOpen(false)}>
                   Home
                 </Link>
-                <Link href={`${Url}/#about`} onClick={() => setOpen(false)}>
+                <Link href="/#about" onClick={() => setOpen(false)}>
                   About
                 </Link>
-                <Link href={`${Url}/#projects`} onClick={() => setOpen(false)}>
+                <Link href="/#projects" onClick={() => setOpen(false)}>
                   Projects
                 </Link>
-                <Link href={`${Url}/#contact`} onClick={() => setOpen(false)}>
+                <Link href="/#contact" onClick={() => setOpen(false)}>
                   Contact
                 </Link>
 
