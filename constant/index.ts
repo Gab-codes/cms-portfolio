@@ -142,7 +142,7 @@ export const projects = [
       "An internal admin dashboard with role-based access, data tables, and form components for managing agents, products, and users. Source code not available as this is a private project.",
     image: "/images/miala.webp",
     technologies: ["React.js", "JavaScript", "TailwindCSS"],
-    liveUrl: "http://mialaweb.vercel.app",
+    liveUrl: "https://www.mialacosmetics.com",
     githubUrl: "#",
   },
 ];
@@ -154,7 +154,7 @@ export const experiences = [
     location: "Remote",
     period: "March 2025 - Present",
     description:
-      "Contributed to multiple projects including a fintech application, custom admin dashboards, and optimized landing pages. Focused on performance optimization, reusable components, API integration, and role-based access control to deliver scalable and user-friendly experiences.",
+      "Contributed to multiple projects including a Fintech application, custom admin dashboards, and optimized landing pages. Focused on performance optimization, reusable components, API integration, and role-based access control to deliver scalable and user-friendly experiences.",
     technologies: [
       "TypeScript",
       "React",
