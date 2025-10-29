@@ -41,7 +41,7 @@ const Navbar = () => {
           Gabriel
         </span>
         <div className="flex items-center gap-4">
-          <Link
+          <a
             href="/cv.pdf"
             target="_blank"
             className={cn(
@@ -50,7 +50,7 @@ const Navbar = () => {
             )}
           >
             Download my Resume
-          </Link>
+          </a>
           <ModeToggle />
         </div>
       </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
                   Contact
                 </Link>
 
-                <Link
+                <a
                   href="/cv.pdf"
                   target="_blank"
                   className={cn(
@@ -99,7 +99,7 @@ const Navbar = () => {
                   )}
                 >
                   Download my Resume
-                </Link>
+                </a>
               </div>
             </SheetContent>
           </Sheet>
