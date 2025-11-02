@@ -139,7 +139,7 @@ export const projects = [
   {
     title: "Miala Admin Dashboard",
     description:
-      "An internal admin dashboard with role-based access, data tables, and form components for managing agents, products, and users. Source code not available as this is a private project.",
+      "A responsive and feature-rich admin dashboard for Miala Cosmetics, with role-based admin system for super and regular admins, integrated APIs for product and user management, and developed a Progressive Web App (PWA) version for cross-device accessibility. Designed and deployed a functional e-commerce landing page prototype used for compliance validation and stakeholder demo.",
     image: "/images/miala.webp",
     technologies: ["React.js", "JavaScript", "TailwindCSS"],
     liveUrl: "https://www.mialacosmetics.com",
