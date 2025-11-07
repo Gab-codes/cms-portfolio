@@ -152,7 +152,7 @@ export const experiences = [
     title: "Frontend Developer",
     company: "LYNOG TECH NIG",
     location: "Remote",
-    period: "Feburary 2025 - Present",
+    period: "Feburary 2023 - Present",
     description:
       "Contributed to multiple projects including a Fintech application, custom admin dashboards, and optimized landing pages. Focused on performance optimization, reusable components, API integration, and role-based access control to deliver scalable and user-friendly experiences.",
     technologies: [
