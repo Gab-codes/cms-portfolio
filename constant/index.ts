@@ -152,7 +152,7 @@ export const experiences = [
     title: "Frontend Developer",
     company: "LYNOG TECH NIG",
     location: "Remote",
-    period: "Feburary 2023 - Present",
+    period: "February 2023 - Present",
     description:
       "Contributed to multiple projects including a Fintech application, custom admin dashboards, and optimized landing pages. Focused on performance optimization, reusable components, API integration, and role-based access control to deliver scalable and user-friendly experiences.",
     technologies: [
@@ -184,7 +184,7 @@ export const experiences = [
     title: "Full-Stack Developer (Freelance)",
     company: "Freelance",
     location: "Remote",
-    period: "2023 - Present",
+    period: "December 2021 - Present",
     description:
       "Built dynamic and responsive websites for clients across various industries. Delivered interactive platforms using modern frameworks and animation libraries, ensuring high performance and great user experience.",
     technologies: [
