@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Badge } from "./ui/badge";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import { skills } from "@/constant";
