@@ -47,7 +47,7 @@ export const projects = [
       "Auth.js",
     ],
     liveUrl: "https://deecar-rentals.vercel.app/",
-    githubUrl: "##",
+    githubUrl: "#",
     status: "In Progress",
   },
   {
