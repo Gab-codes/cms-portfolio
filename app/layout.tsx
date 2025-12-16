@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Toru Gabriel | Full-Stack Developer Portfolio",
     description:
       "Explore the portfolio of Toru Gabriel, showcasing fintech apps, car rental platforms, and scalable web projects built with React, Next.js, and TypeScript.",
-    url: "https://torugabriel.vercel.app",
+    url: "https://torutgabriel.site",
     siteName: "Toru Gabriel Portfolio",
     images: [
       {
