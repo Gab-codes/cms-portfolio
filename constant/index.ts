@@ -92,6 +92,31 @@ export const projects = [
     githubUrl: "#",
   },
   {
+    title: "Lynspeed",
+    description:
+      "A full-featured educational web platform for JAMB exam preparation, featuring CBT-style mock tests, quizzes, performance tracking, and analytics. Built from scratch with robust state management and enhanced with PWA support for offline resilience and an app-like experience.",
+    image: "/images/lynspeed.webp",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "TanStack Query",
+      "TailwindCSS",
+      "PWA (Service Workers)",
+    ],
+    liveUrl: "https://www.lynspeed.com.ng/",
+    githubUrl: "#",
+  },
+  {
+    title: "Lynafrick Agro Foods",
+    description:
+      "A minimalist business website built for a Nigerian agro-food brand to establish an online presence. Designed to be clean, fast, and mobile-friendly, with a strong focus on clarity, performance, and simplicity due to limited brand content.",
+    image: "/images/lynafrick-store.webp",
+    technologies: ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
+    liveUrl: "https://www.lynafrickagrofoods.com.ng",
+    githubUrl: "#",
+  },
+  {
     title: "TechCare Patient Dashboard",
     description:
       "A responsive patient management dashboard built with React, Tailwind CSS, and Vite. Designed to showcase a clean UI, accessibility, and smooth user interactions, optimized for both desktop and mobile experiences.",
