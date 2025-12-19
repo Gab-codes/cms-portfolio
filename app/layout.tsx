@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
     "TypeScript",
+    "JavaScript",
+    "React Native",
+    "Tailwind CSS",
     "Node.js",
     "Portfolio",
     "Ecommerce Developer",
@@ -43,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Toru Gabriel Portfolio",
     images: [
       {
-        url: "/og-image.webp",
+        url: "https://torutgabriel.site/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Toru Gabriel Portfolio",
@@ -57,7 +60,7 @@ export const metadata: Metadata = {
     title: "Toru Gabriel | Full-Stack Developer Portfolio",
     description:
       "Full-stack developer specializing in React, Next.js, and TypeScript. View projects, fintech apps, and web platforms.",
-    images: ["/og-image.webp"],
+    images: ["https://torutgabriel.site/og-image.webp"],
     creator: "@temi_dy",
   },
 };
