@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Toru Gabriel | Full-Stack Developer Portfolio",
+  title: "Toru Gabriel | Full-Stack Developer",
   description:
-    "Portfolio of Toru Gabriel, a full-stack developer with 2+ years of experience building scalable web applications, fintech solutions, and dynamic platforms using TypeScript, Next.js, React, and Node.js.",
+    "Portfolio of Toru Gabriel, a full-stack developer with 4+ years of experience building scalable web applications, fintech solutions, and dynamic platforms using TypeScript, Next.js, React, and Node.js.",
   keywords: [
     "Toru Gabriel",
     "Full-Stack Developer",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Toru Gabriel" }],
   creator: "Toru Gabriel",
   openGraph: {
-    title: "Toru Gabriel | Full-Stack Developer Portfolio",
+    title: "Toru Gabriel | Full-Stack Developer",
     description:
       "Explore the portfolio of Toru Gabriel, showcasing fintech apps, car rental platforms, and scalable web projects built with React, Next.js, and TypeScript.",
     url: "https://torutgabriel.site",
