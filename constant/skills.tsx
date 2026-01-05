@@ -97,7 +97,7 @@ export const bentoItems = [
           alt="Web Application"
           width={300}
           height={300}
-          className="object-contain w-full h-30 md:h-4/5"
+          className="object-contain w-full h-30 "
         />
       </div>
     ),
@@ -113,7 +113,7 @@ export const bentoItems = [
           alt="React Native"
           width={300}
           height={300}
-          className="object-contain w-full h-30 md:h-4/5"
+          className="object-contain w-full h-30 "
         />
       </div>
     ),
@@ -130,7 +130,7 @@ export const bentoItems = [
           alt="responsive website"
           width={300}
           height={300}
-          className="object-contain w-full h-30 md:h-4/5"
+          className="object-contain w-full h-30 "
         />
       </div>
     ),
@@ -147,7 +147,7 @@ export const bentoItems = [
           alt="optimized mobile phone"
           width={300}
           height={300}
-          className="object-contain w-full h-30 md:h-4/5"
+          className="object-contain w-full h-30 "
         />
       </div>
     ),
@@ -165,7 +165,7 @@ export const bentoItems = [
           alt="about me"
           width={400}
           height={400}
-          className="object-contain w-full h-30 md:h-4/5"
+          className="object-contain w-full h-30 "
         />
       </div>
     ),
