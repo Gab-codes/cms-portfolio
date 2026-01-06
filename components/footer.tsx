@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Heart, Linkedin, Mail, Twitter } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -61,7 +61,9 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-medium text-foreground">Connect</h4>
+            <h4 className="text-lg font-medium text-foreground">
+              Connect with me
+            </h4>
             <div className="flex space-x-4">
               <motion.a
                 href="https://github.com/Gab-codes"
@@ -116,9 +118,12 @@ export function Footer() {
           <p className="text-muted-foreground text-sm">
             &copy; {currentYear} Toru Gabriel. All rights reserved.
           </p>
-          <p className="text-muted-foreground text-sm">
-            Built with Next.js & ❤️
-          </p>
+          <div className="flex gap-1 items-center group cursor-pointer">
+            <p className="text-muted-foreground text-sm">
+              Built with Next.js &{" "}
+            </p>
+            <Heart className="inline-block size-4.5 text-red-500 group-hover:fill-red-400" />
+          </div>
         </motion.div>
       </div>
     </footer>

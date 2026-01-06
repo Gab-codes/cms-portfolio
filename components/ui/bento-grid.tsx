@@ -21,7 +21,7 @@ export const BentoGrid = ({
       variants={{
         visible: {
           transition: {
-            staggerChildren: 0.25, // slightly longer delay between items
+            staggerChildren: 0.4, // increased delay for better sequential effect
           },
         },
       }}
@@ -50,23 +50,23 @@ export const BentoGridItem = ({
         "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/20 dark:bg-black dark:shadow-none",
         className
       )}
-      initial={{ opacity: 0, y: 40, rotateX: 15 }}
+      initial={{ opacity: 0, y: 60, rotateX: 15 }}
       whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
       transition={{
         type: "spring",
         stiffness: 100,
         damping: 15,
-        delay: 0.2, // small base delay
       }}
       viewport={{ once: true, margin: "-100px" }}
       whileHover={{ scale: 1.03 }}
     >
-      {header}
+      <div>{header}</div>
       <motion.div
         className="group-hover/bento:translate-x-2 transition-transform duration-300"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.3 }}
+        viewport={{ once: true }}
       >
         {icon}
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
