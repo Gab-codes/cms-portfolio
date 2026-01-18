@@ -47,7 +47,7 @@ export const projects = [
       "Auth.js",
     ],
     liveUrl: "https://deecar-rentals.vercel.app/",
-    githubUrl: "##",
+    githubUrl: "#",
     status: "In Progress",
   },
   {
@@ -68,15 +68,6 @@ export const projects = [
     githubUrl: "#",
   },
   {
-    title: "Interview Pro - AI-Powered Interviewer",
-    description:
-      "An AI-powered mock interview platform designed to simulate real interviews and provide instant structured feedback.",
-    image: "/images/interview-pro.webp",
-    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Firebase", "AI"],
-    liveUrl: "https://interview-pro-rho.vercel.app/",
-    githubUrl: "https://github.com/Gab-codes/InterviewPro",
-  },
-  {
     title: "Monifrap Web",
     description:
       "A modern web platform featuring a pixel-perfect landing page and a secure admin section. Built with Next.js and TypeScript by carefully following a Figma design to deliver a high-quality and responsive user experience.",
@@ -87,10 +78,40 @@ export const projects = [
       "TailwindCSS",
       "Shadcn UI",
       "Framer Motion",
+      "Tanstack Query",
     ],
     liveUrl: "https://www.monifrap.com.ng/",
     githubUrl: "#",
   },
+  {
+    title: "Interview Pro - AI-Powered Interviewer",
+    description:
+      "An AI-powered mock interview platform designed to simulate real interviews and provide instant structured feedback.",
+    image: "/images/interview-pro.webp",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Firebase", "AI"],
+    liveUrl: "https://interview-pro-rho.vercel.app/",
+    githubUrl: "https://github.com/Gab-codes/InterviewPro",
+  },
+  {
+    title: "Vortex Website Generator",
+    description:
+      "An AI-powered website builder that generates complete websites from prompts with real-time preview and inline editing. Users can select elements, edit styles directly, manage images, and keep the generated source code fully in sync and savable.",
+    image: "/images/vortex-website-generator.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Clerk",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Gemini AI",
+      "ImageKit",
+    ],
+    liveUrl: "https://vortex-website-generator.vercel.app",
+    githubUrl: "https://github.com/Gab-codes/vortex-website-generator",
+  },
+
   {
     title: "Lynspeed",
     description:
@@ -135,6 +156,23 @@ export const projects = [
     githubUrl: "https://github.com/Gab-codes/my3d-portfolio",
   },
   {
+    title: "Miala Cosmetics",
+    description:
+      "A responsive and feature-rich admin dashboard for Miala Cosmetics, with role-based admin system for super and regular admins, integrated APIs for product and user management, and developed a Progressive Web App (PWA) version for cross-device accessibility. Designed and deployed a functional e-commerce landing page prototype used for compliance validation and stakeholder demo.",
+    image: "/images/miala.webp",
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "TailwindCSS",
+      "PWA",
+      "Redux",
+      "Shadcn/UI",
+      "ReChart",
+    ],
+    liveUrl: "https://www.mialacosmetics.com",
+    githubUrl: "#",
+  },
+  {
     title: "Tianna-Store – Full-Stack E-commerce",
     description:
       "A scalable full-stack e-commerce platform with product management, inventory tracking, and secure authentication.",
@@ -160,15 +198,6 @@ export const projects = [
     technologies: ["React.js", "TailwindCSS", "JavaScript", "Framer Motion"],
     liveUrl: "https://andrew-website-demo.vercel.app/",
     githubUrl: "https://github.com/torugabriel/andrew-portfolio",
-  },
-  {
-    title: "Miala Cosmetics",
-    description:
-      "A responsive and feature-rich admin dashboard for Miala Cosmetics, with role-based admin system for super and regular admins, integrated APIs for product and user management, and developed a Progressive Web App (PWA) version for cross-device accessibility. Designed and deployed a functional e-commerce landing page prototype used for compliance validation and stakeholder demo.",
-    image: "/images/miala.webp",
-    technologies: ["React.js", "JavaScript", "TailwindCSS"],
-    liveUrl: "https://www.mialacosmetics.com",
-    githubUrl: "#",
   },
 ];
 
