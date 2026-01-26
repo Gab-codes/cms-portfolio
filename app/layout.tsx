@@ -63,6 +63,20 @@ export const metadata: Metadata = {
     images: ["https://torutgabriel.site/og-image.webp"],
     creator: "@temi_dy",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  // verification: {
+  //   google: "your-google-site-verification-code",
+  // },
 };
 
 export default function RootLayout({
@@ -73,7 +87,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} max-w-440 mx-auto antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} max-w-420 mx-auto antialiased`}
       >
         <ThemeProvider
           attribute="class"

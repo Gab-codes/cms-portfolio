@@ -6,6 +6,48 @@ import { projects } from "@/constant";
 import Link from "next/link";
 import { useState, useMemo } from "react";
 import ProjectCard from "@/components/project-card";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All Projects | Toru Gabriel Portfolio",
+  description:
+    "Explore all projects by Toru Gabriel, including fintech apps, e-commerce platforms, and web applications built with React, Next.js, and TypeScript.",
+  keywords: [
+    "projects",
+    "portfolio",
+    "Toru Gabriel",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "fintech",
+    "web development",
+  ],
+  openGraph: {
+    title: "All Projects | Toru Gabriel Portfolio",
+    description:
+      "Discover the complete collection of projects by Toru Gabriel, showcasing expertise in full-stack development.",
+    url: "https://torutgabriel.site/all-projects",
+    siteName: "Toru Gabriel Portfolio",
+    images: [
+      {
+        url: "https://torutgabriel.site/og-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Toru Gabriel Projects",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "All Projects | Toru Gabriel Portfolio",
+    description:
+      "Explore all projects by Toru Gabriel, full-stack developer specializing in React, Next.js, and TypeScript.",
+    images: ["https://torutgabriel.site/og-image.webp"],
+    creator: "@temi_dy",
+  },
+};
 
 export default function AllProjectsPage() {
   const [selectedTech, setSelectedTech] = useState<string>("all");
@@ -23,7 +65,7 @@ export default function AllProjectsPage() {
   const filteredProjects = useMemo(() => {
     if (selectedTech === "all") return projects;
     return projects.filter((project) =>
-      project.technologies.includes(selectedTech)
+      project.technologies.includes(selectedTech),
     );
   }, [selectedTech]);
 
